@@ -22,10 +22,12 @@ for key in results:
     if (key == nameOfStudent):
         results[key] = newGrade
         flag=False
+        break
     else:
         flag=True
 
-if flag == True: print ("Student not found")
+if flag == True: 
+    print ("Student not found")
 
 #result after changing the grade
 print("RESULTS OF STUDENTS:\n",results)
